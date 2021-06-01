@@ -1,2 +1,2 @@
-# GenericApiRequester
+# covidInfoRequester
 Created with CodeSandbox
