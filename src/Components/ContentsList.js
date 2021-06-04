@@ -1,7 +1,12 @@
 import { Link, Route } from "react-router";
+import ContentsListPage from "./Components/ContentsListPage.js";
 
-export default function getContentsListElement(key, value) {
-  if (typeof value !== "object" && typeof value !== "array") {
+export default function getContentsListElement(
+  key,
+  value,
+  ContentsListPageArray
+) {
+  if (typeof value !== "object") {
     // This is an endpoint. Return a list item with the simple
     // text of the key and the value
     return <li>{key + ": " + value}</li>;

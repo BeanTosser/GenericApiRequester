@@ -1,14 +1,12 @@
 import "./styles.css";
 import { useState, useRef } from "react";
 import requestHttp from "./Tools/httpRequester.js";
-import { HashRouter as Router, Route, Link, Switch } from "react-router";
-
+import { HashRouter as Router, Route, Link, Switch } from "react-router-dom";
+import ContentsListPage from "./Components/ContentsListPage.js";
 export default function App() {
   const [httpRequestData, setHttpRequestData] = useState(null);
 
   let elementArray = useRef([]);
-  let componentArray = useRef([]);
-  let routeArray = useRef([]);
   let requestData = useRef(null);
   let requestAttempts = useRef(0);
 
