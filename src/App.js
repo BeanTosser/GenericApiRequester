@@ -35,6 +35,7 @@ export default function App() {
         });
         */
         setHttpRequestData(elementArray);
+        // Get content list pages and routes
       },
       true
     );
